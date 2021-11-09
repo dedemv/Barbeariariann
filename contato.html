@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                <img src="./img/logo2.png" alt="Image" height="100" width="300" id="imgpos">
+                <h1>Barbearia do Riann</h1>
+                <p class="subtitle">Preparando seu Cabelo</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="current-page">Contato</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main class="contact">
+        <h1>Contate-nos</h1>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <h4>Localização</h4>
+                <p>672 João Florêncio Pretty</p>
+                <p>Platina, São Paulo</p>
+                <h4>Celular</h4>
+                <p>+55 (018)99712-2108</p>
+                <h4>Email</h4>
+                <p>tccbarbearia2021@gmail.com</p>
+            </div>
+            <div class="flex-item-right">
+                <form action="email.php" method="post">
+                    <label for="nome">Digite seu Nome</label>
+                    <input type="text" required name='nome'>
+                    <label for="email">Digite seu E-Mail</label>
+                    <input type="email" required name="email" >
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" cols="30" rows="10"></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
+
+<form action="email.php" method="post">
+    <label for="nome">Digite seu Nome</label>
+    <input type="text" required name="nome" />
+    <label for="email">Digite seu E-Mail</label>
+    <input type="email" required name="email" />
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem"></textarea>
+    <button type="submit">Enviar</button>
