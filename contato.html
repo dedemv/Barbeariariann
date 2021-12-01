@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container container-nav">
             <div class="site-title">
-                <img src="./img/logo2.png" alt="Image" height="100" width="300" id="imgpos">
+                <img src="logo2.png" alt="Image" height="100" width="300" id="imgpos">
                 <h1>Barbearia do Riann</h1>
                 <p class="subtitle">Preparando seu Cabelo</p>
             </div>
@@ -43,12 +43,18 @@
             </div>
             <div class="flex-item-right">
                 <form action="email.php" method="post">
-                    <label for="nome">Digite seu Nome</label>
-                    <input type="text" required name='nome'>
-                    <label for="email">Digite seu E-Mail</label>
-                    <input type="email" required name="email" >
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" cols="30" rows="10"></textarea>
+                    <div>
+                        <label for="nome">Digite seu Nome</label>
+                        <input type="text" required name='nome'>
+                    </div>
+                    <div>
+                        <label for="email">Digite seu E-Mail</label>
+                        <input type="email" required name="email" >
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" cols="30" rows="10"></textarea>
+                    </div>
                     <button type="submit">Enviar Mensagem</button>
                 </form>
             </div>
@@ -58,16 +64,7 @@
         
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
-
-<form action="email.php" method="post">
-    <label for="nome">Digite seu Nome</label>
-    <input type="text" required name="nome" />
-    <label for="email">Digite seu E-Mail</label>
-    <input type="email" required name="email" />
-    <label for="mensagem">Mensagem</label>
-    <textarea name="mensagem"></textarea>
-    <button type="submit">Enviar</button>
